@@ -1,17 +1,15 @@
-<div>
-    <div>
-        <input type="button" (click)="formValue=null" value="Reset form">
-    </div>
+<div *ngIf="isTemplateDriven">
     <div class="row">
+    <div class=container>
         <div class="col-md-12">
     
             <div *ngIf="!formValue">
                 <form name ="myForm" #c="ngForm" (ngSubmit)="onSubmit(c)">
                     <div>
                         <label for="name">name:</label><br>
-                        <input type="text" id="name" name="name" [ngModel]="name" required><br>
+                        <input type="text" id="name" name="name" ngModel><br>
                         <label for="email">email:</label><br>
-                        <input type="text" id="email" name="email" [(ngModel)]="email"><br><br>
+                        <input type="text" id="email" name="email" ngModel><br><br>
                         
                     </div>
                     <div>
@@ -40,20 +38,24 @@
     
             
         </div>
-        <div class="col-md-12">
+    </div> 
+    </div>    
+ <div class="col-md-12">
     
-            <div *ngIf="formValue">
-                <div *ngFor="let formValue of register; let i= index;">
-                    <p>name: {{formValue.name}}</p>
-                    <p>email: {{formValue.email}}</p>
-                    <p>gender: {{formValue.gender}}</p>
-                    <p>state: {{formValue.state}}</p>
-                    <p>bio: {{formValue.bio}}</p>
-                    <hr>
-                </div>
-            </div>
+    <div *ngIf="formValue">
+        <div *ngFor="let formValue of register; let i= index;">
+            <p>name: {{formValue.name}}</p>
+            <p>email: {{formValue.email}}</p>
+            <p>gender: {{formValue.gender}}</p>
+            <p>state: {{formValue.state}}</p>
+            <p>bio: {{formValue.bio}}</p>
+            <hr>
         </div>
-    
-    </div>
-    
+        <div>
+            <input type="button" (click)="formValue=null" value="Reset form">
+        </div>
+       
+    </div> 
+ </div>
+
 </div>

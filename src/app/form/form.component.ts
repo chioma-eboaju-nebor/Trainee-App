@@ -7,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
   
-  name ;
-  email ;
   formValue ;
   register =[];
-  
+  isTemplateDriven;
   constructor() { }
 
   ngOnInit() {
@@ -27,8 +25,6 @@ export class FormComponent implements OnInit {
   }
    
   onSubmit(myForm){
-    console.log(myForm.value);
-    console.log(this.email);
     this.formValue = myForm.value;
     this.register.push(this.formValue);
     myForm.reset();
