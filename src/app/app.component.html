@@ -6,7 +6,8 @@
       </div>
   </div> 
 </div>-->
-<app-form></app-form>
+<app-form *ngIf="isTemplateDriven"></app-form>
+<app-reactive-form *ngIf="!isTemplateDriven"></app-reactive-form>
 <!-- <div>
        <ul class="list-group small-width li-no-bullet">
           <li class="list-group-item">Tosin</li>
