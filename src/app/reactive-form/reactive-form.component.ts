@@ -16,8 +16,10 @@ export class ReactiveFormComponent implements OnInit {
       name: ['', Validators.required],
       email: ['', Validators.required],
       gender: [Validators.required],
+      stacks: ['', Validators.required],
       state: ['', Validators.required],
-      bio: ['', Validators.required]
+      mobile: ['', Validators.required],
+      about: ['', Validators.required],
     });
    }
 
