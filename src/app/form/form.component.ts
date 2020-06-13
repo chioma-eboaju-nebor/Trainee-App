@@ -15,9 +15,9 @@ export class FormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   // setTimeout(function() {
-   //   this.name="new chioma";
-   // }, 10000);
+    // setTimeout(function() {
+    //   this.name="new chioma";
+    // }, 10000);
    // setTimeout(function() {
    //   this.name="new charles";
    // }, 13000);

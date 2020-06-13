@@ -1,5 +1,5 @@
 <div>
-    <h2 class="center title">Template Driven Form</h2>
+    <h1 class="center title">Template Driven Form</h1>
     <div class="row">
         <div class="col-md-12">
     
@@ -7,24 +7,31 @@
                 <form name ="myForm" #c="ngForm" (ngSubmit)="onSubmit(c)">
                     <div>
                         <label for="name">name:</label><br>
-                        <input type="text" id="name" name="name" [ngModel]="name" required><br>
+                        <input type="text" id="name" name="name" [ngModel]="name" required><br><br>
+
+                    </div>
+
+                    <div>
                         <label for="email">email:</label><br>
                         <input type="text" id="email" name="email" [(ngModel)]="email"><br><br>
-                        
+                      
                     </div>
+                        
                     <div>
                         
                             <label for="gender">gender:</label><br>
-                            <input type="radio" id="male" name="gender" value="male" ngModel>
-                            <label for="male">Male</label><br>
-                            <input type="radio" id="female" name="gender" value="female" ngModel>
-                            <label for="female">Female</label><br><br>
+                             <input type="radio" id="male" name="gender" value="male" ngModel>
+                              <label for="male">Male</label><br>
+                             <input type="radio" id="female" name="gender" value="female" ngModel>
+                              <label for="female">Female</label><br><br>
                     
                     </div>
+
                     <div>
                         <label for="state">state:</label><br>
                         <input type="text" id="state" name="state" ngModel><br><br>
                     </div>
+
                     <div>
                         
                             <label for="bio">bio:</label><br>
@@ -33,6 +40,7 @@
                             <input type="submit" value="submit">
                         
                     </div>
+
                 </form> 
             </div>
     

@@ -4,14 +4,49 @@
 .li-no-bullet{
     list-style: none;
 }
-// .title{
+.general{
+    background-color: khaki;
+}
 
+.wrapper{
+    width: 80%;
+    margin-top:0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin: 0 auto;
+  
+  }
+  /*.header {
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    padding: 1em;
+    // padding-left: 3em;
+    padding-right: 3em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  
+    .logo{
+      width: 20%;
+    }
+}*/
+        ul.menu {
+          width: 80%;
+           display: flex;
+           justify-content: flex-end;
+           list-style: none;
+           flex-direction: row;
+           padding-right: 3em;
+           padding: 1em;
+          ul{
+            list-style: none;
+            padding: 0 1em 0 1em;
+          }
+      
+        }
+// .route{
+//     //text-align: right;
+//     flex: auto;
 // }
-// .wrapper{
-
-// }
-// .center{
-    
-// }
-
 

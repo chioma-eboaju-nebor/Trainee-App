@@ -2,42 +2,42 @@
     <h1 class="center title">Reactive Form</h1>
     <form [formGroup] = "myForm" (ngSubmit) = 'done(myForm)' aria-autocomplete="both">
         <div>
-            <label for="name"><b>Name:</b></label>
+            <label for="name"><b>Name:</b></label><br>
             <input type="text" formControlName='name' class="form-control"><br><br>
         </div>
 
         <div>
-            <label for="name"><b>Email:</b></label>
+            <label for="email"><b>Email:</b></label><br>
             <input type="email" formControlName='email' class="formcontol"><br><br>
         </div>
 
         <div>
-            <label for="gender"><b>Gender:</b></label>
-            <label for="gender">Male</label>
+            <label for="gender"><b>Gender:</b></label><br>
             <input type="radio" name="gender" value="male">
-            <label for="gender">Female</label>
-            <input type="radio" name="gender" value="female"><br><br>
+            <label for="gender">Male</label><br>
+            <input type="radio" name="gender" value="female">
+            <label for="gender">Female</label><br><br>
         </div>
 
         <div>
-            <label for="stacks"><b>stacks:</b></label>
+            <label for="stacks"><b>stacks:</b></label><br>
             <input type="text" formControlName='stacks' class="formcontrol"><br><br>
         </div>
          
         
         <div>
-            <label for="state"><b>State:</b></label>
+            <label for="state"><b>State:</b></label><br>
             <input type="text" formControlName='state' class="formcontrol"><br><br>
         </div>
         
         <div>
-            <label for="mobile"><b>Mobile:</b></label>
+            <label for="mobile"><b>Mobile:</b></label><br>
             <input type="number" formControlName='mobile' class="formcontrol"><br><br>
         </div>
 
         
         <div>
-            <label for="about"><b>About Me:</b></label>
+            <label for="about"><b>About Me:</b></label><br>
             <textarea formControlName='about' id="" cols="30" rows="10"></textarea><br><br>
         </div>
 

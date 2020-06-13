@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
-import { ReactiveFormComponent } from './../reactive-form/reactive-form.component';
-import { FormComponent } from './../form/form.component';
-import { HomeComponent } from './../home/home.component';
-import { NewTraineeComponent } from './../new-trainee/new-trainee.component';
+import { ReactiveFormComponent } from '../reactive-form/reactive-form.component';
+import { FormComponent } from '../form/form.component';
+import { HomeComponent } from '../home/home.component';
+import { NewTraineeComponent } from '../new-trainee/new-trainee.component';
+import { EmployeeComponent } from '../employee/employee.component';
 
 
 export const routes: Routes = [
@@ -27,6 +28,10 @@ export const routes: Routes = [
                             path : 'trainee/new',
                             component: NewTraineeComponent
                         },
+                        {
+                            path : 'employee',
+                            component: EmployeeComponent
+                          },
                         {
                             path: '**',
                             component: ReactiveFormComponent

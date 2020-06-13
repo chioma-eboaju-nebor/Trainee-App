@@ -1,9 +1,10 @@
 <h1 class="center title">newtrainee form</h1> 
+<progress></progress>
  <div class="container">
     <form [formGroup]="traineeForm"   (ngSubmit)="addTrainee(traineeForm)">
         <div>
             <label for="name">Full Name</label>
-            <input type="text" class="form-control" formControlName="name">
+            <input type="text" class="form-control" formControlName="name"><br>
         </div>
 
         <div>
@@ -11,13 +12,13 @@
            <select class="form-control"  formControlName="complexion">
                <option>Complexion</option>
                <option *ngFor="let item of complexions" [value]="item">{{item}}</option>
-           </select>
+           </select><br>
        </div>
 
        <div>
            <label for="hobbies">Hobbies</label>
            <input type="text" class="form-control" formControlName="hobbies"
-            placeholder="">
+            placeholder=""><br>
        </div>
 
        <div>
@@ -25,38 +26,40 @@
            <select class="form-control"  formControlName="gender">
                <option>Gender</option>
                <option *ngFor="let item of genders" [value]="item">{{item}}</option>
-           </select>
+           </select><br>
        </div>
 
        <div>
            <label for="dateofbirth">Date of birth</label>
-           <input type="text" class="form-control" formControlName="dateofbirth" placeholder="Format: dd/mm"
-            >
+           <input type="text" class="form-control" formControlName="dateofbirth"
+            placeholder="Format: dd/mm" ><br>
        </div>
+
        <div>
            <label for="almamata">Almamata</label>
-           <input type="text" class="form-control" formControlName="almamata" 
-            >
+           <input type="text" class="form-control" formControlName="almamata" placeholder="institution"
+            ><br>
        </div>
+
        <div>
            <label for="discipline">Discipline</label>
            <input type="text" class="form-control" formControlName="discipline" 
-            >
+            ><br>
        </div>
 
        <div>
            <label for="email">Email</label>
            <input type="email" class="form-control" formControlName="email" 
-            >
+            ><br>
        </div>
        <div>
            <label for="telephone">Telephone</label>
-           <input type="text" class="form-control" formControlName="telephone" 
-            >
+           <input type="number" class="form-control" formControlName="telephone" 
+            ><br>
        </div>
        <div>
-           <label for="about">Tell us about You</label>
-           <textarea name="about" id="" cols="30" rows="10" formControlName="about"></textarea>
+           <label for="about">Tell us about You</label><br>
+           <textarea name="about" id="" cols="30" rows="10" formControlName="about"></textarea><br>
        </div>
        <div>
            <button type="submit" class="btn btn-primary">Submit</button>

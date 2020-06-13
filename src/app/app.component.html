@@ -1,23 +1,31 @@
+<div class="general">
 
-
-<div class="row"> 
-    <nav class="col-md-2">
-  <ul>
-    <li>
+<div class="header"> 
+    <div class="logo"><b>FINTRAK ACADEMY</b></div>
+  
+  <nav class="menu">  
+    <ul>
       <a [routerLink]="['/home']" >Home</a>
-    </li>
-    <li>
+    </ul>
+    <ul> 
       <a [routerLink]="['/form']" >Template Form</a>
-    </li>
-    <li>
+    </ul>
+    <ul>
       <a [routerLink]="['/reactiveform']" >Reactive Form</a>
-    </li>
-    <li>
-        <a [routerLink]="['/trainee/new']">Add trainee</a>
-    </li>
-  </ul>
-    </nav>
-    <div class="col-md-10">
+    </ul>
+
+    <ul> 
+      <a [routerLink]="['/trainee/new']">Add trainee</a>
+    </ul>
+
+    <ul> 
+      <a [routerLink]="['/employee']">Add employee</a>
+    </ul>
+
+  </nav>
+
+</div>
+ <div class="wrapper">
       <router-outlet></router-outlet>
-    </div>
-  </div>
+ </div>
+</div>

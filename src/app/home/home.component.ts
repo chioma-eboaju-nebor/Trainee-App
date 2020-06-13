@@ -11,19 +11,19 @@ export class HomeComponent implements OnInit {
   activeTrainee;
   academy = [
     {
-      name: 'Tosin', image: 'ayoodobada.jpg', complexion: 'black', hobbies: ['Singing','Watching Football']
+      name: 'Godwin', image: 'ayoodobada.jpg', complexion: 'black', hobbies: ['Singing','Watching Football']
      },
     {
        name: 'Chioma', image: 'broher.jpg', complexion: 'black', hobbies: ['Researching', 'Imagination'] 
      },
      {
-       name: 'Zino', image: 'chipeter.jpg', complexion: 'black', hobbies: ['Playing Games','Clubbing'] 
+       name: 'Mary', image: 'chipeter.jpg', complexion: 'black', hobbies: ['Playing Games','Clubbing'] 
      },
      {
-      name: 'Sarah', image: 'rontol.jpg', complexion: 'yellow', hobbies: ['Reading','Eating']
+      name: 'Rose', image: 'rontol.jpg', complexion: 'yellow', hobbies: ['Reading','Eating']
       },
      {
-      name: 'Chiboy', image: 'waytorontol.jpg', complexion: 'Fair', hobbies: ['Chess','Playing Basketball'] 
+      name: 'Merci', image: 'waytorontol.jpg', complexion: 'Fair', hobbies: ['Chess','Playing Basketball'] 
     }
    ]; 
   

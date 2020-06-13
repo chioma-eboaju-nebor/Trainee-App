@@ -44,13 +44,13 @@ export class NewTraineeComponent implements OnInit {
     const newFormData: ITrainee = formData;
     // this.traineeServ.addTrainee(newFormData);
     this.traineeServ.addTrainee(newFormData)
-    .subscribe((response) => {
-        console.log(response);
-      },
-     (error)=>{
-       console.log(error);
-     },
-      ()=>{});
+    // .subscribe((response) => {
+    //     console.log(response);
+    //   },
+    //  (error)=>{
+    //    console.log(error);
+    //  },
+    //   ()=>{});
     form.reset();
 
       // this is commented to demonstrate service(this.httpclient.post(environment.firebaseConfig.databaseURL + '/trainees.json', newFormData)

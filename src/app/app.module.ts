@@ -8,7 +8,7 @@ import { FormComponent } from './form/form.component';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { RouterModule } from '@angular/router';
-import { routes } from './trainee/route';
+import { routes } from './service/route';
 import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { NewTraineeComponent } from './new-trainee/new-trainee.component';
@@ -16,6 +16,7 @@ import { DeleteTraineeComponent } from './delete-trainee/delete-trainee.componen
 import { UpdateTraineeComponent } from './update-trainee/update-trainee.component';
 import { ViewTraineeComponent } from './view-trainee/view-trainee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployeeComponent } from './employee/employee.component';
 
 
 
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     NewTraineeComponent,
     DeleteTraineeComponent,
     UpdateTraineeComponent,
-    ViewTraineeComponent
+    ViewTraineeComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
